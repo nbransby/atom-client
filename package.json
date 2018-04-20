@@ -1,15 +1,15 @@
 {
 	"name": "CodeStream",
 	"main": "./lib/codestream",
-	"version": "0.0.20",
+	"version": "0.0.21",
 	"description":
-		"CodeStream puts team chat into Atom so that developers can discuss code where they code. Conversation threads automatically become annotations that live with the codebase forever.",
+		"Build the knowledge base behind your codebase. CodeStream allows your development team to communicate within Atom and conversation threads automatically become annotations that live with your codebase forever.",
 	"keywords": ["git", "team", "chat"],
 	"activationCommands": {},
 	"repository": "https://github.com/TeamCodeStream/atom-client",
 	"license": "",
 	"engines": {
-		"atom": ">=1.0.0 <2.0.0"
+		"atom": ">=1.24.1 <2.0.0"
 	},
 	"scripts": {
 		"prettify":
@@ -62,11 +62,12 @@
 		"pubnub": "^4.19.0",
 		"raven-for-redux": "^1.2.0",
 		"raven-js": "^3.22.1",
-		"react": "^16.0.0",
+		"react": "^16.2.0",
 		"react-contenteditable": "^2.0.5",
-		"react-dom": "^16.0.0",
+		"react-dom": "^16.2.0",
 		"react-gravatar": "^2.6.3",
 		"react-intl": "^2.4.0",
+		"react-linkify": "^0.2.2",
 		"react-redux": "^5.0.6",
 		"redux": "^3.7.2",
 		"redux-devtools-extension": "^2.13.2",
