@@ -1,7 +1,7 @@
 {
 	"name": "CodeStream",
 	"main": "./lib/codestream",
-	"version": "0.0.22",
+	"version": "0.0.23",
 	"description":
 		"Build the knowledge base behind your codebase. CodeStream allows your development team to communicate within Atom and conversation threads automatically become annotations that live with your codebase forever.",
 	"keywords": ["git", "team", "chat"],
@@ -13,7 +13,8 @@
 	},
 	"scripts": {
 		"prettify":
-			"prettier --config .prettierrc --write ./{lib,spec}/*.js ./{lib,spec}/**/*.js ./package.json ./.prettierrc"
+			"prettier --config .prettierrc --write ./{lib,spec}/*.js ./{lib,spec}/**/*.js ./package.json ./.prettierrc",
+		"flow": "flow"
 	},
 	"deserializers": {
 		"codestream/CodestreamView": "deserializeCodestreamView"
@@ -31,7 +32,7 @@
 			"transpiler": "atom-babel6-transpiler",
 			"options": {
 				"babel": {
-					"presets": ["es2015", "react"],
+					"presets": ["es2015", "react", "flow"],
 					"plugins": [
 						"transform-object-rest-spread",
 						[
@@ -62,9 +63,9 @@
 		"pubnub": "^4.19.0",
 		"raven-for-redux": "^1.2.0",
 		"raven-js": "^3.22.1",
-		"react": "^16.2.0",
+		"react": "^16.3.2",
 		"react-contenteditable": "^2.0.5",
-		"react-dom": "^16.2.0",
+		"react-dom": "^16.3.2",
 		"react-gravatar": "^2.6.3",
 		"react-intl": "^2.4.0",
 		"react-linkify": "^0.2.2",
@@ -78,8 +79,13 @@
 		"uuid": "^3.2.1"
 	},
 	"devDependencies": {
+		"babel-eslint": "^8.2.3",
+		"babel-preset-flow": "^6.23.0",
 		"enzyme": "^3.1.0",
 		"enzyme-adapter-react-16": "^1.0.2",
+		"eslint": "^4.19.1",
+		"eslint-plugin-react": "^7.7.0",
+		"flow-bin": "^0.72.0",
 		"prettier": "^1.7.4",
 		"redux-mock-store": "^1.4.0",
 		"sinon": "^4.1.3"
